@@ -51,8 +51,7 @@ img {
 
 body {
     background: #e8d9bf;
-    margin-left: 20px;
-    margin-right: 20px;
+
 }
 
 
@@ -60,8 +59,14 @@ body {
 
 
 /* ヘッダー */
+
 #header {
     position: relative;
+
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .header-wrap {
@@ -113,12 +118,14 @@ body {
     font-size: 82px;
     padding-top: 50px;
     text-align: center;
+    line-height: 96px;
 }
 
 .p-text {
     font-size: 23px;
     padding: 50px;
     text-align: center;
+    line-height: 38px;
 }
 
 .all-about-us {
@@ -126,15 +133,18 @@ body {
     padding-top: 89px;
     max-width: 1000px;
     margin: 0 auto;
+
 }
 
 .art-coffe img {
     border-bottom-right-radius: 100px;
+    margin-left: 20px;
 }
 
 .art {
     width: 425px;
-    margin: 79px;
+    margin-left: 80px;
+    margin-right: 20px;
 }
 
 .about-us-logo {
@@ -147,12 +157,19 @@ body {
 .text-1 {
     font-size: 44px;
     margin-bottom: 38px;
+    line-height: 61px;
 
 }
 
 .text-2 {
     font-size: 16px;
+    line-height: 26px;
 
+}
+
+.all-menu {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
@@ -172,7 +189,7 @@ body {
     gap: 50px;
     padding-top: 48px;
     align-items: flex-start;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 
 }
@@ -188,7 +205,8 @@ body {
 
 
 .text-3 {
-    padding-top: 25px;
+    margin-top: 25px;
+    line-height: 25px;
 }
 
 .menu img {
@@ -205,6 +223,11 @@ body {
 
 .img-list {
     display: flex;
+}
+
+.all-event {
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .event-logo {
@@ -235,6 +258,7 @@ body {
 .date {
     width: 120px;
     text-align: left;
+    line-height: 45px;
 
 }
 
@@ -243,6 +267,7 @@ body {
     text-align: left;
     text-decoration: underline;
     padding-bottom: 3px;
+    line-height: 45px;
 }
 
 .accsess-logo {
@@ -281,6 +306,7 @@ body {
     font-size: 20px;
     color: black;
     margin-left: 58px;
+    line-height: 39px;
 
 
 
@@ -292,7 +318,7 @@ body {
     font-size: 16px;
     color: black;
     width: 1000px;
-    margin: 0 auto;
+    text-align: center;
 
 }
 
@@ -301,4 +327,6 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
+
+
 }
