@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="渋谷にあるデザインカフェ">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
@@ -38,8 +44,16 @@
         </div>
         <div class="slider">
             <p>
-                <img class="pc" src="images/pc_first-100.jpg" alt="">
-                <img class="sp" src="images/sp_main_vs_2@2x-100.jpg" alt="">
+                <picture>
+                    <source srcset="images/sp_main_vs@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_first-100.jpg" alt="">
+                </picture>
+            </p>
+            <p>
+                <picture>
+                    <source srcset="images/sp_main_vs_2@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/slider_2.jpg" alt="">
+                </picture>
             </p>
         </div>
     </header>
@@ -57,12 +71,19 @@
 
     <section class="all-about-us">
 
+        <h2 class="about-us-logo-sp"><img src="images/about_us@2x.png" alt=""></h2>
+
+
         <p class="art-coffe">
-            <img src="images/pc_about-100.jpg" alt="">
+            <picture>
+                <source srcset="images/about_us@2x-100.jpg" media="(max-width:767px)">
+                <img src="images/pc_about-100.jpg" alt="">
+            </picture>
         </p>
 
         <div class="art">
             <h2 class="about-us-logo"><img src="images/about_us@2x.png" alt=""></h2>
+
 
             <p class="text-1">私たちが提供する<br>こだわりのコーヒー</p>
 
@@ -111,6 +132,7 @@
                 <li><img src="images/pc_gallary_03-100.jpg" alt=""></li>
                 <li><img src="images/pc_gallary_02-100.jpg" alt=""></li>
                 <li><img src="images/pc_gallary_01-100.jpg" alt=""></li>
+                <li><img src="images/33293311_m.jpg" alt=""></li>
             </ul>
         </div>
     </section>
@@ -178,6 +200,36 @@
                 $('.hamburger').toggleClass('open');
                 $('.sp-nav').fadeToggle();
             });
+
+            //スライダーFV
+            $('.slider').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+
+            });
+
+            $('.img-list').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                slidesToShow: 5,   // PCで5枚同時に表示
+                slidesToScroll: 1, // スクロール時に1枚ずつ動く
+                responsive: [
+                    {
+                        breakpoint: 767, // 767px以下（スマホ）
+                        settings: {
+                            slidesToShow: 1,  // 1枚ずつ表示
+                        }
+                    }
+                ]
+            });
+
+
+
+
         });
     </script>
 </body>
