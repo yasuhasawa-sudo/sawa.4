@@ -81,6 +81,7 @@ html {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 100;
 
 }
 
@@ -144,14 +145,14 @@ html {
     font-size: 82px;
     padding-top: 50px;
     text-align: center;
-    line-height: 96px;
+    line-height: 1.5;
 }
 
 .p-text {
     font-size: 23px;
     padding: 50px;
     text-align: center;
-    line-height: 38px;
+    line-height: 1.5;
 }
 
 .all-about-us,
@@ -199,13 +200,13 @@ html {
 .text-1 {
     font-size: 44px;
     margin-bottom: 38px;
-    line-height: 61px;
+    line-height: 1.5;
 
 }
 
 .text-2 {
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.5;
 
 }
 
@@ -245,12 +246,14 @@ html {
 
 .text-3 {
     margin-top: 25px;
-    line-height: 25px;
+    line-height: 1.5;
 }
 
 .menu img {
     border-top-right-radius: 50px;
+
 }
+
 
 .GALLERY-logo {
     width: 245px;
@@ -263,6 +266,16 @@ html {
 .img-list {
     display: flex;
     margin-top: 27px;
+
+}
+
+.slick-next {
+    right: 25px;
+}
+
+.slick-prev {
+    left: 25px;
+    z-index: 100;
 }
 
 .all-event {
@@ -300,7 +313,7 @@ html {
 .date {
     width: 120px;
     text-align: left;
-    line-height: 45px;
+    line-height: 1.5;
 
 }
 
@@ -309,7 +322,7 @@ html {
     text-align: left;
     text-decoration: underline;
     padding-bottom: 3px;
-    line-height: 45px;
+    line-height: 1.5;
 }
 
 .accsess-logo {
@@ -351,7 +364,7 @@ html {
 }
 
 .footer-right p {
-    line-height: 39px;
+    line-height: 1.5;
 }
 
 
@@ -465,15 +478,14 @@ html {
 
     .big-happy {
         font-size: 56px;
-        line-height: 72px;
-        white-space: nowrap;
+        line-height: 1.5
     }
 
 
     .text-1 {
         font-size: 32px;
-        line-height: 48px;
-        white-space: nowrap;
+        line-height: 1.5;
+
     }
 
 }
@@ -491,13 +503,14 @@ html {
     }
 
     .big-happy {
-        font-size: 38px;
-        line-height: 44px;
+        font-size: 10vw;
+        line-height: 1.5;
+
     }
 
     .p-text {
-        font-size: 16px;
-        line-height: 30px;
+        font-size: 2.5vw;
+        line-height: 1.5;
     }
 
     .about-us-logo {
@@ -513,8 +526,31 @@ html {
 
     .all-about-us {
         display: block;
+        padding-left: 0;
+        padding-right: 0;
 
     }
+
+    .art {
+        width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+        box-sizing: border-box;
+
+    }
+
+    .art-coffe {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .art-coffe img {
+        border-bottom-right-radius: 0;
+
+    }
+
+
+
 
     .text-1 {
         font-size: 36px;
@@ -529,8 +565,25 @@ html {
 
     }
 
+    .menu {
+        width: 100%;
+    }
+
+    .menu h3 {
+        font-size: 40px;
+    }
+
+    .text-3 {
+        font-size: 17px;
+        margin-bottom: 60px;
+    }
+
+
+
+
     .GALLERY-logo {
         width: 142px;
+        padding-top: 40px;
     }
 
     .img-list {
@@ -547,48 +600,64 @@ html {
         width: 100%;
         display: block;
     }
-}
 
 
-.event-logo {
-    width: 100px;
-}
+    .event-logo {
+        width: 100px;
+    }
 
-.box {
-    margin-top: 22px;
-}
+    .box {
+        margin-top: 22px;
+        display: block;
+    }
 
-.text4 {
-    width: 300px;
-    /* 要素の横幅を指定 */
-    white-space: nowrap;
-    /* 横幅のMAXに達しても改行しない */
-    overflow: hidden;
-    /* 溢れた部分を隠す */
-    text-overflow: ellipsis;
-    /* 「…」と省略 */
-    -webkit-text-overflow: ellipsis;
-    /* Safari用 */
-    -o-text-overflow: ellipsis;
-    /* Opera用 */
-}
+    .item {
+        display: block;
+    }
 
-.accsess-logo {
-    width: 124px;
-}
+    .text-4 {
+        /* width: 300px; */
+        white-space: nowrap;
+        /* 横幅のMAXに達しても改行しない */
+        overflow: hidden;
+        /* 溢れた部分を隠す */
+        text-overflow: ellipsis;
+        /* 「…」と省略 */
+        -webkit-text-overflow: ellipsis;
+        /* Safari用 */
+        -o-text-overflow: ellipsis;
+        /* Opera用 */
+    }
 
-.map iframe {
-    padding-top: 10px;
-}
+    .accsess-logo {
+        width: 124px;
+    }
 
-.footer-left {
-    width: 226.7px;
-}
 
-.footer-right {
-    font-size: 18px;
-}
 
-.footer-box {
-    display: block;
+    .map iframe {
+        padding-top: 10px;
+    }
+
+    .footer-left {
+        width: 226.7px;
+    }
+
+    .footer-right {
+
+        margin-left: 0;
+    }
+
+    .footer-right p {
+        font-size: 18px;
+    }
+
+    .footer-box {
+        display: block;
+    }
+
+    .maru {
+        width: 100px;
+    }
+
 }

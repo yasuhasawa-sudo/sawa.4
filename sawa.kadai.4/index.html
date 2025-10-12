@@ -100,21 +100,30 @@
 
         <div class="menus">
             <div class="menu">
-                <img src="images/pc_menu_drink-100.jpg" alt="ドリンク">
+                <picture>
+                    <source srcset="images/drink_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_drink-100.jpg" alt="ドリンク">
+                </picture>
                 <div class="menu-text">
                     <h3>Drink</h3>
                     <p class="text-3">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
             </div>
             <div class="menu">
-                <img src="images/pc_menu_food-100.jpg" alt="フード">
+                <picture>
+                    <source srcset="images/food_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_food-100.jpg" alt="フード">
+                </picture>
                 <div class="menu-text">
                     <h3>Food</h3>
                     <p class="text-3">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
                 </div>
             </div>
             <div class="menu">
-                <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ">
+                <picture>
+                    <source srcset="images/cake_sp@2x-100.jpg" media="(max-width:767px)">
+                    <img src="images/pc_menu_sweets-100.jpg" alt="スイーツ">
+                </picture>
                 <div class="menu-text">
                     <h3>Sweets</h3>
                     <p class="text-3">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。</p>
@@ -211,10 +220,10 @@
             });
 
             $('.img-list').slick({
-                dots: true,
+
                 autoplay: true,
                 autoplaySpeed: 2000,
-                arrows: false,
+
                 slidesToShow: 5,   // PCで5枚同時に表示
                 slidesToScroll: 1, // スクロール時に1枚ずつ動く
                 responsive: [
