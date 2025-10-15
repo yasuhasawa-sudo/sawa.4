@@ -64,7 +64,8 @@
             <p class="happy">Have a happy day From a cup of coffee.</p>
             <p class="big-happy">ハッピーに溢れる1日を<br>1杯のコーヒーから。</p>
             <p class="p-text">
-                毎日を丁寧に大切に過ごしたい。だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間とこだわりのコーヒーを提供したい。</p>
+                毎日を丁寧に大切に過ごしたい。<br class="sp-br">だからこそ一杯一杯丁寧にコーヒーを入れ<br>足を運んでくれるお客さんには落ち着く空間と<br
+                    class="sp-br">こだわりのコーヒーを提供したい。</p>
 
         </div>
     </section>
@@ -141,7 +142,7 @@
                 <li><img src="images/pc_gallary_03-100.jpg" alt=""></li>
                 <li><img src="images/pc_gallary_02-100.jpg" alt=""></li>
                 <li><img src="images/pc_gallary_01-100.jpg" alt=""></li>
-                <li><img src="images/33293311_m.jpg" alt=""></li>
+                <li><img src="images/pancake.jpg" alt=""></li>
             </ul>
         </div>
     </section>
@@ -235,6 +236,17 @@
                     }
                 ]
             });
+
+            $(window).on('scroll', function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.maru').fadeIn();
+                } else {
+                    $('.maru').fadeOut();
+                }
+            });
+
+
+
 
 
 

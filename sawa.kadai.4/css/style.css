@@ -145,14 +145,18 @@ html {
     font-size: 82px;
     padding-top: 50px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.17;
 }
 
 .p-text {
     font-size: 23px;
     padding: 50px;
     text-align: center;
-    line-height: 1.5;
+    line-height: 1.65;
+}
+
+.sp-br {
+    display: none;
 }
 
 .all-about-us,
@@ -200,13 +204,13 @@ html {
 .text-1 {
     font-size: 44px;
     margin-bottom: 38px;
-    line-height: 1.5;
+    line-height: 1.38;
 
 }
 
 .text-2 {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.625;
 
 }
 
@@ -246,7 +250,7 @@ html {
 
 .text-3 {
     margin-top: 25px;
-    line-height: 1.5;
+    line-height: 1.47;
 }
 
 .menu img {
@@ -364,7 +368,7 @@ html {
 }
 
 .footer-right p {
-    line-height: 1.5;
+    line-height: 1.95;
 }
 
 
@@ -498,19 +502,29 @@ html {
 
     }
 
+    .message {
+        padding-top: 43px;
+    }
+
     .happy {
         font-size: 17px;
     }
 
     .big-happy {
         font-size: 10vw;
-        line-height: 1.5;
+        line-height: 1.15;
+        padding-top: 29px;
 
     }
 
     .p-text {
-        font-size: 2.5vw;
-        line-height: 1.5;
+        font-size: 16px;
+        line-height: 1.875;
+        padding: 29px;
+    }
+
+    .sp-br {
+        display: block;
     }
 
     .about-us-logo {
@@ -528,6 +542,7 @@ html {
         display: block;
         padding-left: 0;
         padding-right: 0;
+        padding-top: 30px;
 
     }
 
@@ -545,6 +560,7 @@ html {
     }
 
     .art-coffe img {
+        padding-top: 18px;
         border-bottom-right-radius: 0;
 
     }
@@ -554,18 +570,31 @@ html {
 
     .text-1 {
         font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 32px;
     }
 
     .text-2 {
         font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .menu-logo {
+        width: 87.5px;
+        padding-top: 52px;
     }
 
     .menus {
         display: block;
+        padding-top: 23px;
 
     }
 
     .menu {
+        width: 100%;
+    }
+
+    .menu img {
         width: 100%;
     }
 
@@ -575,7 +604,8 @@ html {
 
     .text-3 {
         font-size: 17px;
-        margin-bottom: 60px;
+        line-height: 1.58;
+        margin-bottom: 70px;
     }
 
 
@@ -583,7 +613,7 @@ html {
 
     .GALLERY-logo {
         width: 142px;
-        padding-top: 40px;
+        padding-top: 19px;
     }
 
     .img-list {
@@ -604,6 +634,7 @@ html {
 
     .event-logo {
         width: 100px;
+        padding-top: 35px;
     }
 
     .box {
@@ -615,7 +646,12 @@ html {
         display: block;
     }
 
+    .date {
+        font-size: 16px;
+    }
+
     .text-4 {
+        font-size: 16px;
         /* width: 300px; */
         white-space: nowrap;
         /* 横幅のMAXに達しても改行しない */
@@ -631,12 +667,14 @@ html {
 
     .accsess-logo {
         width: 124px;
+        padding-top: 33px;
     }
 
 
 
     .map iframe {
         padding-top: 10px;
+        height: 191px;
     }
 
     .footer-left {
@@ -646,6 +684,7 @@ html {
     .footer-right {
 
         margin-left: 0;
+        padding-top: 33px;
     }
 
     .footer-right p {
@@ -656,8 +695,15 @@ html {
         display: block;
     }
 
+    .footer-copy {
+        font-size: 16px;
+        margin-top: 48px;
+    }
+
     .maru {
         width: 100px;
+        bottom: 250px;
+
     }
 
 }
