@@ -23,22 +23,22 @@
 
             <nav class="pc-nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
 
             <div class="hamburger"><span></span></div>
             <nav class="sp-nav">
                 <ul>
-                    <li><a href="">ABOUT US</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">EVENT</a></li>
-                    <li><a href="">ACCESS</a></li>
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#event">EVENT</a></li>
+                    <li><a href="#access">ACCESS</a></li>
                 </ul>
             </nav>
         </div>
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <section class="all-about-us">
+    <section id="about" class="all-about-us">
 
         <h2 class="about-us-logo-sp"><img src="images/about_us@2x.png" alt=""></h2>
 
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <section class="all-menu">
+    <section id="menu" class="all-menu">
         <h2 class="menu-logo"><img src="images/menu@2x.png" alt=""></h2>
 
         <div class="menus">
@@ -133,21 +133,21 @@
         </div>
     </section>
 
-    <section>
-        <div class="all-GALLERY">
-            <h2 class="GALLERY-logo"><img src="images/gallery@2x.png" alt=""></h2>
-            <ul class="img-list">
-                <li><img src="images/pc_gallary_05-100.jpg" alt=""></li>
-                <li><img src="images/pc_gallary_04-100.jpg" alt=""></li>
-                <li><img src="images/pc_gallary_03-100.jpg" alt=""></li>
-                <li><img src="images/pc_gallary_02-100.jpg" alt=""></li>
-                <li><img src="images/pc_gallary_01-100.jpg" alt=""></li>
-                <li><img src="images/pancake.jpg" alt=""></li>
-            </ul>
-        </div>
+    <section id="gallery" class="all-GALLERY">
+
+        <h2 class="GALLERY-logo"><img src="images/gallery@2x.png" alt=""></h2>
+        <ul class="img-list">
+            <li><img src="images/pc_gallary_05-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_04-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_03-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_02-100.jpg" alt=""></li>
+            <li><img src="images/pc_gallary_01-100.jpg" alt=""></li>
+            <li><img src="images/pancake.jpg" alt=""></li>
+        </ul>
+
     </section>
 
-    <section class="all-event">
+    <section id="event" class="all-event">
 
         <h2 class="event-logo"><img src="images/event@2x.png" alt=""></h2>
         <div class="box">
@@ -169,7 +169,7 @@
 
     </section>
 
-    <section>
+    <section id="access">
         <div class="all-access">
             <h2 class="accsess-logo"><img src="images/access@2x.png" alt=""></h2>
 
@@ -206,7 +206,7 @@
         $(function () {
 
             //ハンバーガーメニュー
-            $('.hamburger').click(function () {
+            $('.hamburger,.sp-nav a').click(function () {
                 $('.hamburger').toggleClass('open');
                 $('.sp-nav').fadeToggle();
             });
